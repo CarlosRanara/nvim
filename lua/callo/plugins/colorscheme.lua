@@ -4,10 +4,10 @@ return {
     name = "catppuccin",
     priority = 1000, -- Load before other plugins
     config = function()
-      local colors = require("catppuccin.palettes").get_palette("macchiato")
+      local colors = require("catppuccin.palettes").get_palette("mocha")
 
       require("catppuccin").setup({
-        flavour = "macchiato", -- Use Macchiato theme
+        flavour = "mocha", -- Use Macchiato theme
         on_colors = function(c)
           c.bg = colors.base
           c.bg_dark = colors.crust

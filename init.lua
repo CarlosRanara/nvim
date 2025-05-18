@@ -1,6 +1,6 @@
-require("josean.core.options")
-require("josean.core")
-require("josean.lazy")
+require("callo.core.options")
+require("callo.core")
+require("callo.lazy")
 
 vim.opt.clipboard = "unnamedplus"
 

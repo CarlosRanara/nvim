@@ -2,7 +2,7 @@
 
 This is a custom Neovim configuration primarily tailored for **C and C++ development**. It includes essential plugins for LSP support, autocompletion, automatic pairs, and a visually appealing theme.
 
-## 📦 Features
+## Features
 
 * **LSP Support** for C/C++ via `clangd`
 * **Autocompletion** with `nvim-cmp`
@@ -10,14 +10,14 @@ This is a custom Neovim configuration primarily tailored for **C and C++ develop
 * **Syntax highlighting** with `nvim-treesitter`
 * **Modern theme** using `catppuccin`
 
-## 🎨 Theme
+## Theme
 
 The configuration uses the [Catppuccin](https://github.com/catppuccin/nvim) theme plugin for a soft and visually appealing color scheme:
 
 * Plugin: `catppuccin/nvim`
 * Flavor: Usually set to "mocha" or "macchiato" (check `colorscheme` in config)
 
-## 👅 Installation
+## Installation
 
 > Make sure you have Neovim 0.8+ and Git installed.
 
@@ -42,7 +42,7 @@ nvim
 
 Neovim will automatically install plugins on the first run (assuming lazy.nvim or packer is being used).
 
-## 💡 Notes
+## Notes
 
 * Ensure that `clangd` is installed and in your PATH:
 
@@ -56,7 +56,7 @@ Neovim will automatically install plugins on the first run (assuming lazy.nvim o
 
 * For full autocompletion, check the `nvim-cmp` setup in the `lua/callo/plugins/` directory.
 
-## 🌐 OS-Specific Setup
+## OS-Specific Setup
 
 ### Linux
 
@@ -91,11 +91,8 @@ Neovim will automatically install plugins on the first run (assuming lazy.nvim o
   ~/.config/nvim
   ```
 
-## 🚲 Recommended Fonts
+## Recommended Fonts
 
 For the best experience, use a **Nerd Font** like [MesloLGS NF](https://www.nerdfonts.com/font-downloads) to support devicons and UI symbols.
 
 ---
-
-Happy coding! 🚀
-

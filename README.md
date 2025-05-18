@@ -1,4 +1,4 @@
-# Neovim Configuration by Carlos Ranara
+# Neovim Configuration by Callo
 
 This is a custom Neovim configuration primarily tailored for **C and C++ development**. It includes essential plugins for LSP support, autocompletion, automatic pairs, and a visually appealing theme.
 

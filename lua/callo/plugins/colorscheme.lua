@@ -1,35 +1,52 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "rose-pine/neovim",
+    name = "rose-pine",
     priority = 1000, -- Load before other plugins
     config = function()
-      local colors = require("catppuccin.palettes").get_palette("mocha")
-
-      require("catppuccin").setup({
-        flavour = "mocha", -- Use Macchiato theme
-        on_colors = function(c)
-          c.bg = colors.base
-          c.bg_dark = colors.crust
-          c.bg_float = colors.mantle
-          c.bg_highlight = colors.surface0
-          c.bg_popup = colors.surface1
-          c.bg_search = colors.peach
-          c.bg_sidebar = colors.mantle
-          c.bg_statusline = colors.surface0
-          c.bg_visual = colors.overlay0
-          c.border = colors.overlay1
-          c.fg = colors.text
-          c.fg_dark = colors.subtext1
-          c.fg_float = colors.text
-          c.fg_gutter = colors.overlay1
-          c.fg_sidebar = colors.subtext0
-        end,
+      require("rose-pine").setup({
+        variant = "main", -- auto, main, moon, or dawn
+        dark_variant = "main", -- main, moon, or dawn (used when variant is auto)
+        bold_vert_split = false,
+        dim_nc_background = false,
+        disable_background = false,
+        disable_float_background = false,
+        disable_italics = false,
+        
+        groups = {
+          background = "base",
+          background_nc = "_experimental_nc",
+          panel = "surface",
+          panel_nc = "base",
+          border = "highlight_med",
+          comment = "muted",
+          link = "iris",
+          punctuation = "subtle",
+          
+          error = "love",
+          hint = "iris",
+          info = "foam",
+          warn = "gold",
+          
+          headings = {
+            h1 = "iris",
+            h2 = "foam",
+            h3 = "rose",
+            h4 = "gold",
+            h5 = "pine",
+            h6 = "foam",
+          }
+        },
+        
+        highlight_groups = {
+          -- Customize specific highlight groups if needed
+          -- Example:
+          -- ColorColumn = { bg = "rose" }
+        }
       })
 
       -- Apply the theme
-      vim.cmd([[colorscheme catppuccin]])
+      vim.cmd("colorscheme rose-pine")
     end,
   },
 }
-

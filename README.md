@@ -11,8 +11,8 @@ This is a custom Neovim configuration primarily tailored for **C and C++ develop
 * **Modern theme** using `catppuccin`
 
 ## Theme
-* **The configuration uses the Rose Pine theme plugin for a natural and elegant color scheme:
-* **Plugin: rose-pine/neovim
+* The configuration uses the Rose Pine theme plugin for a natural and elegant color scheme:
+* Plugin: rose-pine/neovim
 
 ## Installation
 

@@ -12,7 +12,6 @@ vim.o.cindent = true    -- Enable C-style indentation
 vim.opt.cinoptions = ":0,l1,t0,+4,(0,u0,w1" -- Specific indentation rules for C
 vim.o.scrolloff = 999
 vim.o.cursorline = true
-vim.o.cursorcolumn = true
 vim.o.number = true
 vim.o.relativenumber = true
 

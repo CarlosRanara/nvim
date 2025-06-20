@@ -10,6 +10,13 @@ vim.o.expandtab = false -- Use actual tab characters instead of spaces
 vim.o.autoindent = true -- Maintain indentation level of the previous line
 vim.o.cindent = true    -- Enable C-style indentation
 vim.opt.cinoptions = ":0,l1,t0,+4,(0,u0,w1" -- Specific indentation rules for C
+vim.o.scrolloff = 999
+vim.o.cursorline = true
+vim.o.cursorcolumn = true
+vim.o.number = true
+vim.o.relativenumber = true
+
+
 
 
 vim.api.nvim_create_autocmd("FileType", {
@@ -22,6 +29,6 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-    pattern = { ".c", ".h" },
+    pattern = { ".*c", ".*h" },
     command = "silent! execute '!clang-format -i %'",
 })
